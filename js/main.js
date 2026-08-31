@@ -1,5 +1,6 @@
 // ============================================================================
-// Baba Jewellers — Interactive UI & Hero Slider
+// Baba Jewellers — Interactive UI & Mobile Experience
+// Sangli, Maharashtra | Contact: 9168157092 / 9168156528
 // ============================================================================
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -9,22 +10,54 @@ document.addEventListener("DOMContentLoaded", function () {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  // 2. Mobile Navigation Toggle
+  // 2. Mobile Navigation Toggle with Auto-Close on Scroll & Outside Click
   var navToggle = document.getElementById("navToggle");
   var mainNav = document.getElementById("mainNav");
+  var siteHeader = document.querySelector(".site-header");
+
+  function closeMobileNav() {
+    if (mainNav && mainNav.classList.contains("open")) {
+      mainNav.classList.remove("open");
+      if (navToggle) {
+        navToggle.setAttribute("aria-expanded", "false");
+      }
+    }
+  }
+
   if (navToggle && mainNav) {
-    navToggle.addEventListener("click", function () {
+    navToggle.addEventListener("click", function (e) {
+      e.stopPropagation();
       var isOpen = mainNav.classList.toggle("open");
       navToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
     });
 
+    // Close when tapping any menu link
     var navLinks = mainNav.querySelectorAll("a");
     navLinks.forEach(function (link) {
       link.addEventListener("click", function () {
-        mainNav.classList.remove("open");
-        navToggle.setAttribute("aria-expanded", "false");
+        closeMobileNav();
       });
     });
+
+    // Close when clicking outside header/menu
+    document.addEventListener("click", function (e) {
+      if (siteHeader && !siteHeader.contains(e.target)) {
+        closeMobileNav();
+      }
+    });
+
+    // Close automatically when scrolling the page
+    var scrollTimeout = null;
+    window.addEventListener("scroll", function () {
+      if (mainNav.classList.contains("open")) {
+        if (!scrollTimeout) {
+          scrollTimeout = setTimeout(function () {
+            closeMobileNav();
+            scrollTimeout = null;
+          }, 100);
+        }
+      }
+    }, { passive: true });
   }
 
   // 3. Hero Slider with Changeable Images
@@ -114,7 +147,28 @@ document.addEventListener("DOMContentLoaded", function () {
     startAutoSlide();
   }
 
-  // 4. Fullscreen Image Lightbox Modal
+  // 4. Quick Appointment / Inquiry Form Submission to WhatsApp
+  var contactForm = document.getElementById("appointmentForm");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var name = (document.getElementById("formName") || {}).value || "";
+      var phone = (document.getElementById("formPhone") || {}).value || "";
+      var interest = (document.getElementById("formInterest") || {}).value || "Bridal Jewellery";
+      var notes = (document.getElementById("formNotes") || {}).value || "";
+
+      var text = "Namaste Baba Jewellers! I would like to schedule a showroom visit / custom order:%0A%0A" +
+        "• Name: " + encodeURIComponent(name) + "%0A" +
+        "• Mobile: " + encodeURIComponent(phone) + "%0A" +
+        "• Interested In: " + encodeURIComponent(interest) + "%0A" +
+        (notes ? ("• Requirements: " + encodeURIComponent(notes) + "%0A%0A") : "%0A") +
+        "Please confirm appointment details.";
+
+      window.open("https://wa.me/919168157092?text=" + text, "_blank");
+    });
+  }
+
+  // 5. Fullscreen Image Lightbox Modal
   var lightbox = document.getElementById("imageLightbox");
   var lightboxImg = document.getElementById("lightboxImg");
   var lightboxCaption = document.getElementById("lightboxCaption");
