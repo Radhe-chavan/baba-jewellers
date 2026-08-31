@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 96" width="100%" height="100%">
+  <defs>
+    <!-- Royal Metallic Gold Gradient -->
+    <linearGradient id="royalGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D4AF37" />
+      <stop offset="35%" stop-color="#FFF0A0" />
+      <stop offset="70%" stop-color="#C59332" />
+      <stop offset="100%" stop-color="#8C6214" />
+    </linearGradient>
+    
+    <!-- Ruby Gemstone Core -->
+    <radialGradient id="rubyGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E52B50" />
+      <stop offset="60%" stop-color="#991124" />
+      <stop offset="100%" stop-color="#550A14" />
+    </radialGradient>
+  </defs>
+
+  <!-- Crowned Royal Crest / Emblem -->
+  <g transform="translate(10, 6)">
+    <!-- Outer Octagonal Shield -->
+    <polygon points="42,2 72,14 84,42 72,70 42,82 12,70 0,42 12,14" fill="#FFFFFF" stroke="url(#royalGold)" stroke-width="3" />
+    <!-- Inner Dotted Hallmark Ring -->
+    <circle cx="42" cy="42" r="32" fill="none" stroke="#C59332" stroke-width="1.5" stroke-dasharray="3.5,2.5" />
+    <!-- Faceted Gold Diamond -->
+    <polygon points="42,16 64,42 42,68 20,42" fill="url(#royalGold)" />
+    <!-- Ruby Core Gem -->
+    <circle cx="42" cy="42" r="10" fill="url(#rubyGlow)" stroke="#FFFFFF" stroke-width="1.2" />
+    <!-- Brilliant Star Sparkle -->
+    <path d="M42,24 L44,36 L56,42 L44,48 L42,60 L40,48 L28,42 L40,36 Z" fill="#FFFFFF" />
+    <!-- Royal Crown on top -->
+    <path d="M32,5 L36,12 L42,7 L48,12 L52,5 L48,14 L36,14 Z" fill="url(#royalGold)" />
+  </g>
+
+  <!-- Brand Typography: Bold Marathi Title -->
+  <text x="108" y="42" font-family="'Rozha One', 'Playfair Display', Georgia, serif" font-size="36" font-weight="700" fill="#141210" letter-spacing="1.5">बाबा ज्वेलर्स</text>
+  
+  <!-- English Subtitle in Spaced Roman Caps -->
+  <text x="110" y="68" font-family="'Cinzel', 'Plus Jakarta Sans', -apple-system, sans-serif" font-size="16" font-weight="800" fill="#8C1D2F" letter-spacing="4.5">BABA JEWELLERS</text>
+  
+  <!-- Hallmark & City Authenticity Line -->
+  <g transform="translate(110, 76)">
+    <line x1="0" y1="6" x2="40" y2="6" stroke="#C59332" stroke-width="1.2" opacity="0.7" />
+    <text x="48" y="10" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" fill="#6E6557" letter-spacing="2.5">BIS 916 HALLMARK • SANGLI</text>
+    <line x1="240" y1="6" x2="280" y2="6" stroke="#C59332" stroke-width="1.2" opacity="0.7" />
+  </g>
+</svg>

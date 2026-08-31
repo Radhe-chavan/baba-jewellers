@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGradientDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9A7023" />
+      <stop offset="50%" stop-color="#C59332" />
+      <stop offset="100%" stop-color="#7B5412" />
+    </linearGradient>
+    <radialGradient id="rubyGlow2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D92546" />
+      <stop offset="100%" stop-color="#8C1428" />
+    </radialGradient>
+  </defs>
+
+  <g transform="translate(10, 10)">
+    <polygon points="50,2 85,17 100,50 85,83 50,98 15,83 0,50 15,17" fill="#0E382C" stroke="url(#goldGradientDark)" stroke-width="2.5" />
+    <circle cx="50" cy="50" r="38" fill="none" stroke="url(#goldGradientDark)" stroke-width="1.2" stroke-dasharray="3, 3" />
+    <polygon points="50,16 76,40 50,84 24,40" fill="url(#goldGradientDark)" />
+    <polygon points="50,24 68,42 50,76 32,42" fill="#0E382C" />
+    <circle cx="50" cy="46" r="9" fill="url(#rubyGlow2)" stroke="url(#goldGradientDark)" stroke-width="1.5" />
+    <path d="M50,33 L52,43 L62,45 L52,47 L50,57 L48,47 L38,45 L48,43 Z" fill="#FFFFFF" opacity="0.9" />
+    <path d="M42,6 L45,14 L50,8 L55,14 L58,6 L55,16 L45,16 Z" fill="url(#goldGradientDark)" />
+  </g>
+
+  <text x="128" y="52" font-family="'Rozha One', 'Playfair Display', Georgia, serif" font-size="38" font-weight="700" fill="#07221A" letter-spacing="1">बाबा ज्वेलर्स</text>
+  <text x="130" y="82" font-family="'Cinzel', -apple-system, sans-serif" font-size="15" font-weight="800" fill="#9A7023" letter-spacing="4">BABA JEWELLERS</text>
+  <g transform="translate(130, 92)">
+    <line x1="0" y1="6" x2="60" y2="6" stroke="#C59332" stroke-width="1" opacity="0.6" />
+    <text x="70" y="10" font-family="'Plus Jakarta Sans', sans-serif" font-size="10.5" font-weight="700" fill="#5F5647" letter-spacing="2">BIS 916 HALLMARK • SANGLI</text>
+    <line x1="265" y1="6" x2="330" y2="6" stroke="#C59332" stroke-width="1" opacity="0.6" />
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 100" width="100%" height="100%">
+  <defs>
+    <linearGradient id="goldGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3E5AB" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#F3E5AB" />
+    </linearGradient>
+    <radialGradient id="burgundyGrad2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A52A3E" />
+      <stop offset="100%" stop-color="#6B1B2A" />
+    </radialGradient>
+  </defs>
+
+  <g transform="translate(10, 8)">
+    <polygon points="42,2 80,42 42,82 4,42" fill="url(#burgundyGrad2)" stroke="url(#goldGradLight)" stroke-width="2.5" />
+    <polygon points="42,12 70,42 42,72 14,42" fill="none" stroke="#FAF7F2" stroke-width="1.2" stroke-dasharray="3,2" />
+    <polygon points="42,20 62,42 42,64 22,42" fill="url(#goldGradLight)" />
+    <path d="M42,28 L44,38 L54,42 L44,46 L42,56 L40,46 L30,42 L40,38 Z" fill="#FFFFFF" />
+  </g>
+
+  <text x="105" y="44" font-family="'Rozha One', 'Playfair Display', 'Cormorant Garamond', Georgia, serif" font-size="34" font-weight="700" fill="#FFFFFF" letter-spacing="1">बाबा ज्वेलर्स</text>
+  <text x="107" y="70" font-family="'Cinzel', 'Plus Jakarta Sans', -apple-system, sans-serif" font-size="14.5" font-weight="800" fill="#D4AF37" letter-spacing="4">BABA JEWELLERS</text>
+  <g transform="translate(107, 78)">
+    <line x1="0" y1="6" x2="45" y2="6" stroke="#D4AF37" stroke-width="1" opacity="0.7" />
+    <text x="52" y="10" font-family="'Plus Jakarta Sans', sans-serif" font-size="9.5" font-weight="700" fill="#D8C08E" letter-spacing="2">BIS 916 HALLMARK • SANGLI</text>
+    <line x1="225" y1="6" x2="270" y2="6" stroke="#D4AF37" stroke-width="1" opacity="0.7" />
+  </g>
+</svg>

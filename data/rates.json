@@ -1,0 +1,10 @@
+{
+  "_readme": "Real-time benchmark gold & silver rates for Sangli/Maharashtra showroom. Edit these rates anytime.",
+  "gold24k_per_gram": 7550,
+  "gold22k_per_gram": 6920,
+  "gold18k_per_gram": 5660,
+  "silver_per_kg": 90000,
+  "silver_per_gram": 90,
+  "city": "Sangli / Maharashtra",
+  "updated_label": "Live Showroom Rate (Updated Daily)"
+}
