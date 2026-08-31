@@ -41,7 +41,7 @@
   <!-- Hallmark & City Authenticity Line -->
   <g transform="translate(110, 76)">
     <line x1="0" y1="6" x2="40" y2="6" stroke="#C59332" stroke-width="1.2" opacity="0.7" />
-    <text x="48" y="10" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" fill="#6E6557" letter-spacing="2.5">BIS 916 HALLMARK • SANGLI</text>
-    <line x1="240" y1="6" x2="280" y2="6" stroke="#C59332" stroke-width="1.2" opacity="0.7" />
+    <text x="48" y="10" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" fill="#6E6557" letter-spacing="2.5">BIS 916 HALLMARK • MANGLE</text>
+    <line x1="260" y1="6" x2="300" y2="6" stroke="#C59332" stroke-width="1.2" opacity="0.7" />
   </g>
 </svg>

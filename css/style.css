@@ -1137,7 +1137,7 @@ ul {
   border: 1.5px solid var(--border-subtle);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
-  padding: 40px 36px;
+  padding: 40px 32px;
   max-width: 860px;
   margin: 0 auto;
   width: 100%;
@@ -1147,7 +1147,7 @@ ul {
 
 .form-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 18px;
   margin-top: 1.5rem;
   width: 100%;
@@ -1157,11 +1157,13 @@ ul {
 .form-group-full {
   grid-column: 1 / -1;
   width: 100%;
+  min-width: 0;
   box-sizing: border-box;
 }
 
 .form-group {
   width: 100%;
+  min-width: 0;
   box-sizing: border-box;
 }
 
@@ -1169,13 +1171,14 @@ ul {
   display: block;
   width: 100%;
   max-width: 100%;
+  min-width: 0;
   box-sizing: border-box;
-  padding: 0.88rem 1.1rem;
+  padding: 0.88rem 1rem;
   border: 1.5px solid var(--border-subtle);
   border-radius: var(--radius-sm);
   background: #ffffff;
   font-family: var(--font-sans);
-  font-size: 1rem;
+  font-size: 0.98rem;
   color: var(--text-dark);
   transition: all 0.2s ease;
 }
@@ -2031,12 +2034,16 @@ ul {
     padding: 55px 0;
   }
   .form-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 14px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
   }
   .appointment-card {
-    padding: 22px 14px;
+    padding: 24px 14px;
     width: 100%;
+    min-width: 0;
     box-sizing: border-box;
     overflow: hidden;
   }
